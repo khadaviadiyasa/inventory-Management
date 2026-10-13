@@ -7,7 +7,7 @@ if (session_status() !== PHP_SESSION_ACTIVE) {
 function require_login(): void
 {
     if (!isset($_SESSION['user'])) {
-        header('Location: login.php');
+        header('Location: /inventory/public/login.php');
         exit;
     }
 }
